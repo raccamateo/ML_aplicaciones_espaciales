@@ -1,0 +1,22 @@
+---
+title: "Machine Learning en aplicaciones espaciales"
+author: "Mateo W. Racca"
+date: "`r format(Sys.time(), '%d/%m/%y')`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: sandstone
+    fig_caption: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Introducción
+
+
+El objetivo de esto es recopilar notas de clase y desarrollar una mini guía o resumen sobre machine learning y sus aplicaciones en proyectos (geo)espaciales.
