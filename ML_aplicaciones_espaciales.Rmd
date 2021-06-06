@@ -20,3 +20,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 El objetivo de esto es recopilar notas de clase y desarrollar una mini guía o resumen sobre machine learning y sus aplicaciones en proyectos (geo)espaciales.
+
+
+## Modelos
+
+
+La primera definición de modelo que recuerdo es que los modelos son simplificaciones que nos ayudan a entender, explicar y/o interpretar algo complejo. En el caso de Machine Learning, un modelo es una manera de proponer hipótesis sobre las formas en las que se combinan y relacionan variables.
+
+
+En general, vamos a ver modelos cuya fórmula es: **y = f(x) + Ⲉ**
+
+
+Dónde buscamos estimar *f(x)* para entender de qué forma/s se combinan las equis para generar un output. Podemos suponer que es un modelo lineal o polinómico.
+
+
+George Box dijo que todos los modelos son equivocados y que algunos son útiles. Ahora vamos a ver algunas diferencias entre ek modelado estadístico y el algoritmico:
+
+
+- 
