@@ -28,13 +28,63 @@ El objetivo de esto es recopilar notas de clase y desarrollar una mini guía o r
 La primera definición de modelo que recuerdo es que los modelos son simplificaciones que nos ayudan a entender, explicar y/o interpretar algo complejo. En el caso de Machine Learning, un modelo es una manera de proponer hipótesis sobre las formas en las que se combinan y relacionan variables.
 
 
-En general, vamos a ver modelos cuya fórmula es: **y = f(x) + Ⲉ**
+En general, vamos a ver modelos cuya fórmula general es: **y = f(x) + Ⲉ**
 
 
 Dónde buscamos estimar *f(x)* para entender de qué forma/s se combinan las equis para generar un output. Podemos suponer que es un modelo lineal o polinómico.
 
 
-George Box dijo que todos los modelos son equivocados y que algunos son útiles. Ahora vamos a ver algunas diferencias entre ek modelado estadístico y el algoritmico:
+# Desarrollo
 
 
-- 
+En [Statistical Modeling: The Two Cultures](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-2ZHjgoPxAhXrrJUCHcQUDbYQFjAAegQIBhAD&url=https%3A%2F%2Fprojecteuclid.org%2Fjournals%2Fstatistical-science%2Fvolume-16%2Fissue-3%2FStatistical-Modeling--The-Two-Cultures-with-comments-and-a%2F10.1214%2Fss%2F1009213726.pdf&usg=AOvVaw3kcF6cbHk93o3hUeqho8e1) Breinman sugiere que pensemos en los datos como generados por una caja negra en la que un vector de variables independientes (*x*) está de un lado y del otro se encuentran las variables de respuesta (*y*). En el medio está la caja negra dentro de la cual funciones de la naturaleza asocian las variables predictoras con las de respuesta.
+
+
+Gráficamente podemos expresarlo de la siguiente manera:
+
+
+<center>
+![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/a.png){width=25%}
+</center>
+
+
+Breiman sostiene que hay dos objetivos en el análisis de datos:
+
+- Predecir respuestas.
+
+- Extraer información sobre cómo la naturaleza relaciona las variables predictoras y las de respuesta.
+
+
+George Box dijo que todos los modelos son equivocados y que algunos son útiles. Para Breiman hay dos formas de abordar estos objetivos: el modelado de datos y el algorítmico.
+
+
+## Cultura del Modelado de Datos
+
+
+El análisis empieza asumiendo un modelo estocástico para la caja negra donde los valores de los parámetros son estimados a partir de los datos y después se realizan las predicciones.
+
+
+Una forma común es asumir que los datos son generados por extracciones independientes de
+outputs = *f* (predictores, ruido, parámetros).
+
+
+<center>
+![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/b.png){width=25%}
+</center>
+
+
+La evaluación del modelo es con estimadores insesgados, robustos y mínima varianza. Este enfoque, según Breiman, agrupa a la mayoría de las/os estadísticas/os.
+
+
+## Cultura del Modelado Algorítmico
+
+
+Esta cultura pone énfasis en *y*, es decir en las predicciones. El interior de la caja negra es considerado complejo y desconocido. Busca encontrar una función o algoritmo *f(x)* que opera sobre las *x* para predecir los valores de *y*.
+
+
+El modelo “aprende”de los datos y la evaluación del mismo depende de su performance predictiva.
+
+
+ <center>
+![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/c.png){width=25%}
+</center>
