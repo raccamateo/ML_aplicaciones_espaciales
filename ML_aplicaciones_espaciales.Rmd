@@ -88,3 +88,13 @@ El modelo “aprende”de los datos y la evaluación del mismo depende de su per
  <center>
 ![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/c.png){width=25%}
 </center>
+
+
+Breiman dice que las/os estadísticas/os en investigación aplicada consideran al modelados de datos como la plantilla para el análisis estadístico: al enfrentarse a un problema piensan en un modelo. Creer que se pueden inventar modelos paramétricos para cada naturaleza de problemas y que podemos estimar y alcanzar conclusiones de todo implica que esas conclusiones sean acerca del modelo (y su mecanismo) y no sobre la naturaleza del mecanismo. Esto implica que si el modelo es una emulación pobre de la naturaleza de la incógnita las conclusiones sean incorrectas.
+
+
+
+
+
+
+
