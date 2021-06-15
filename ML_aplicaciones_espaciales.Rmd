@@ -90,11 +90,18 @@ El modelo “aprende”de los datos y la evaluación del mismo depende de su per
 </center>
 
 
-Breiman dice que las/os estadísticas/os en investigación aplicada consideran al modelados de datos como la plantilla para el análisis estadístico: al enfrentarse a un problema piensan en un modelo. Creer que se pueden inventar modelos paramétricos para cada naturaleza de problemas y que podemos estimar y alcanzar conclusiones de todo implica que esas conclusiones sean acerca del modelo (y su mecanismo) y no sobre la naturaleza del mecanismo. Esto implica que si el modelo es una emulación pobre de la naturaleza de la incógnita las conclusiones sean incorrectas.
+Breiman dice que las/os estadísticas/os en investigación aplicada consideran al modelados de datos como la plantilla para el análisis estadístico: al enfrentarse a un problema piensan en un modelo. 
 
 
+Creer que se pueden inventar modelos paramétricos para cada naturaleza de problemas y que podemos estimar y alcanzar conclusiones de todo implica que esas conclusiones sean acerca del modelo (y su mecanismo) y no sobre la naturaleza del mecanismo. Esto implica que si el modelo es una emulación pobre de la naturaleza de la incógnita las conclusiones sean incorrectas.
 
 
+La práctica actual evalúa los modelos en base a la bondad de ajuste y el análisis de residuos. Breiman agrega que unos años atrás estableció un problema de regresión simulado en siete dimensiones con una no linealidad controlada. 
+Las pruebas estándares de bondad de ajuste no rechazaron la linealidad hasta que ésta era extrema. 
 
+El trabajo de Bickel, Ritova y Stoker (2001) muestra que las pruebas de bondad de ajuste tienen muy poco poder, a no ser que la dirección alternativa sea especificadas ya que sino evalúa en múltiples direcciones en simultáneo y no va a rechazar la linearidad a no ser que la falta de ajuste sea extrema.
+
+
+Además, si se eliminan variables o se agregan combinaciones no lineales las pruebas de bondad de ajuste no son aplicables y el análisis residual tampoco es confiable.
 
 
