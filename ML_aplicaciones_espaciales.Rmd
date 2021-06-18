@@ -105,3 +105,72 @@ El trabajo de Bickel, Ritova y Stoker (2001) muestra que las pruebas de bondad d
 Además, si se eliminan variables o se agregan combinaciones no lineales las pruebas de bondad de ajuste no son aplicables y el análisis residual tampoco es confiable.
 
 
+
+# Métricas de error - Loss Functions
+
+
+En esta sección vamos a abordar diferentes modelos de machine learning y también las formas de validar/evaluar estos modelos.
+
+
+Algunas consideraciones:
+
+- Que un modelo funcione bien en datos de entrenamiento no quiere decir que funcione bien en datos nuevos.
+
+- En general, el error en datos de entrenamiento es más bajo que el error en datos de test
+ 
+ 
+## MSE (Error Cuadrático Medio)
+ 
+ 
+ MSE, en español conocido como Error Cuadrático Medio es la métrica más simple y usada para evaluar regresiones. Mide el error cuadrado promedio de las predicciones y calcula para cada punto la diferencia (al cuadrado) entre las predicciones y el target y promedia los valores.
+ 
+ 
+ A mayor valor, peor resulta el modelo. Los resultados de los mejores modelos tienden a cero. La fórmula es la siguiente:
+ 
+ 
+ <center>
+![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/d.png){width=20%}
+</center>
+
+
+*Error debido al sesgo:* diferencia entre el valor esperado de nuestra predicción y el verdadero valor poblacional
+
+*Error debido a la varianza:* producido por la variabilidad de las predicciones del modelo en un punto determinado.
+
+El *σ^2* es la parte “irreductible” del error en el modelo
+
+
+##Test y training set
+
+
+Dividimos el dataset aleatoriamente en training set (TrS) y test set (TeS). El modelo se ajusta en el TrS y el modelo ajustado se usa para predecir las observaciones correspondientes al TeS. Las proporciones suelen ser 70-30 y 80-20.
+
+
+## Cross Validation
+
+
+El proceso de validación cruzada responde a la siguiente ecuación:
+
+
+ <center>
+![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/e.png){width=20%}
+</center>
+
+
+**Pasos:**
+
+1- Dividimos el dataset de manera aleatoria en *K* porciones de igual tamaño.
+
+2- Fiteamos el modelo dejando como TeS una de las *K* partes.
+
+3- Computamos el error en la parte dejada afuera previamente.
+
+4- Repetimos para *K* = 1, 2, 3, ..., *K*. La estimación del error será el promedio de las *K* estimaciones de error.
+
+
+Un ejemplo gráfico:
+
+
+
+
+
