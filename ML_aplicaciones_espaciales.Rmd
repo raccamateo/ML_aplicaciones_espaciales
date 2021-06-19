@@ -159,7 +159,8 @@ El proceso de validación cruzada responde a la siguiente ecuación:
 
 **Pasos:**
 
-1- Dividimos el dataset de manera aleatoria en *K* porciones de igual tamaño.
+1- Dividimos el dataset de manera aleatoria en *K* porciones de igual tamaño. Un valor de *K* pequeño maximiza los datos a estimar, aunque es sensible a valores extremos mientras que un valor de *K* grande maximiza los datos para evaluar pero el modelo es estimado con menos precisión.
+La regla del dígito pulgar oscilante (James, Witten, Hastie y Tibshirani, 2013) plante que en general 5 y 10 son buenos valores.
 
 2- Fiteamos el modelo dejando como TeS una de las *K* partes.
 
@@ -168,9 +169,11 @@ El proceso de validación cruzada responde a la siguiente ecuación:
 4- Repetimos para *K* = 1, 2, 3, ..., *K*. La estimación del error será el promedio de las *K* estimaciones de error.
 
 
-Un ejemplo gráfico:
+Un ejemplo gráfico de las secuencias de iteración para un caso en el que *K* = 5:
 
-
+ <center>
+![](https://raw.githubusercontent.com/raccamateo/ML_aplicaciones_espaciales/main/f.png){width=35%}
+</center>
 
 
 
